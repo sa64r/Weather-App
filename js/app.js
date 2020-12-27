@@ -38,7 +38,7 @@ function changeScreens() {
 }
 
 function getWeatherData() {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${atob(APIKey)}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${atob(APIKey)}`)
         .then(response => response.json())
         .then(data => weatherJSON = data)
 }
