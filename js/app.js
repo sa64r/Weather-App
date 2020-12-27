@@ -9,8 +9,17 @@ const APIKey = "ZDFhNTBkMDdkZTc2ZGYxYjdlZmYyZTk4ZjUyODI0ZGU=";
 
 
 
-
+// for computers
 window.addEventListener('click', function () {
+    getLocation()
+    if (longitude !== undefined && latitude !== undefined) {
+        console.log(weatherJSON)
+        changeScreens()
+        displayWeather()
+    }
+})
+// for touchscreens
+window.addEventListener('touch', function () {
     getLocation()
     if (longitude !== undefined && latitude !== undefined) {
         console.log(weatherJSON)
