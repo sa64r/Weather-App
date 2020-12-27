@@ -1,0 +1,34 @@
+body{
+    background: #4361ee ;
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+
+main{
+    padding: 2rem;
+    margin: auto;
+    
+}
+
+#onLoadScreen{
+    color: #4cc9f0;
+    text-align: center;
+    text-align: center;
+    margin-top: 35vh;
+}
+#onLoadScreen h2{
+    margin-top: 10px;
+    
+}
+
+#weatherShown{
+    display: none;
+    color: #fff;
+    line-height: 1.6;
+    text-align: justify;
+}
