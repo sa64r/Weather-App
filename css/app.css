@@ -7,7 +7,12 @@ h1{
     font-size: 2rem;
     font-weight: bolder;
 }
-
+a{
+    display: block;
+    margin-top: 10px;
+    text-decoration: underline;
+    color:inherit;
+}
 
 main{
     padding: 2rem;

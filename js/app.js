@@ -1,6 +1,7 @@
 const onLoadScreen = document.querySelector("#onLoadScreen");
 const weatherShownScreen = document.querySelector("#weatherShown");
 const weatherReadout = document.querySelector("#weatherReadout");
+const clickHereButton = document.querySelector("#clickHere");
 
 let longitude;
 let latitude;
@@ -19,7 +20,7 @@ window.addEventListener('click', function () {
     }
 })
 // for touchscreens
-window.addEventListener('touch', function () {
+clickHereButton.addEventListener('click', function () {
     getLocation()
     if (longitude !== undefined && latitude !== undefined) {
         console.log(weatherJSON)
