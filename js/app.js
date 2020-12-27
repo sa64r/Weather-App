@@ -1,11 +1,13 @@
-let longitude;
-let latitude;
-let weatherJSON;
-const APIKey = "";
-
 const onLoadScreen = document.querySelector("#onLoadScreen");
 const weatherShownScreen = document.querySelector("#weatherShown");
 const weatherReadout = document.querySelector("#weatherReadout");
+
+let longitude;
+let latitude;
+let weatherJSON;
+const APIKey = "ZDFhNTBkMDdkZTc2ZGYxYjdlZmYyZTk4ZjUyODI0ZGU=";
+
+
 
 
 window.addEventListener('click', function () {
@@ -36,7 +38,7 @@ function changeScreens() {
 }
 
 function getWeatherData() {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${APIKey}`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${atob(APIKey)}`)
         .then(response => response.json())
         .then(data => weatherJSON = data)
 }
